@@ -1,53 +1,10 @@
-{
-    "name": "disk-clean-mcp",
-    "version": "0.1.2",
-    "description": "Read-only disk usage analysis MCP server. Suggests cleanup by size, type, recency, and duplicates.",
-    "command": "disk-clean-mcp",
-    "args": [],
-    "env": {},
-    "cwd": ".",
-    "homepage": "https://github.com/Superandyfre/disk-clean-mcp",
-    "license": "MIT",
-    "author": "Superandyfre",
-    "keywords": [
-        "mcp",
-        "disk",
-        "cleanup",
-        "filesystem",
-        "scan"
-    ],
-    "runtime": {
-        "engine": "node",
-        "version": ">=18"
-    },
-    "install": {
-        "npm": "npm install -g disk-clean-mcp",
-        "npx": "npx disk-clean-mcp"
-    },
-    "tools": [
+﻿{
+    "name": "io.github.superandyfre/disk-clean-mcp",
+    "packages": [
         {
-            "name": "scan_summary",
-            "description": "Summarize total size, file count, and directory count with optional depth and ignore globs."
-        },
-        {
-            "name": "by_type",
-            "description": "Top file extensions ranked by total size."
-        },
-        {
-            "name": "top_dirs",
-            "description": "Heaviest subdirectories by aggregate size."
-        },
-        {
-            "name": "top_files",
-            "description": "Largest files with filters (min size, age, glob include/exclude)."
-        },
-        {
-            "name": "stale_candidates",
-            "description": "Large and old files suggested for cleanup."
-        },
-        {
-            "name": "duplicate_candidates",
-            "description": "Groups of files with identical size and content hash (read-only)."
+            "registry_type": "mcpb",
+            "identifier": "https://github.com/Superandyfre/disk-clean-mcp/releases/download/v0.1.2/disk-clean-mcp.mcpb",
+            "file_sha256": "AC9C66F15198FAD9E41E83436FF9A926C923060BCF80BF37B56F8A7DEB5A1D5F"
         }
     ]
 }
