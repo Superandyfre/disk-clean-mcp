@@ -1,6 +1,6 @@
 {
     "name": "disk-clean-mcp",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "A Model Context Protocol server that analyzes local disk usage and suggests cleanup targets.",
     "private": false,
     "type": "module",
