@@ -1,4 +1,5 @@
 # Disk Clean MCP
+mcp-name: io.github.superandyfre/disk-clean-mcp
 
 [![npm version](https://img.shields.io/npm/v/disk-clean-mcp?color=2e7d32)](https://www.npmjs.com/package/disk-clean-mcp)
 [![build](https://github.com/Superandyfre/disk-clean-mcp/actions/workflows/build.yml/badge.svg)](https://github.com/Superandyfre/disk-clean-mcp/actions/workflows/build.yml)
