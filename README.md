@@ -1,5 +1,10 @@
 # Disk Clean MCP
 
+[![npm version](https://img.shields.io/npm/v/disk-clean-mcp?color=2e7d32)](https://www.npmjs.com/package/disk-clean-mcp)
+[![build](https://github.com/Superandyfre/disk-clean-mcp/actions/workflows/build.yml/badge.svg)](https://github.com/Superandyfre/disk-clean-mcp/actions/workflows/build.yml)
+[![license](https://img.shields.io/badge/license-MIT-0a0a0a.svg)](https://github.com/Superandyfre/disk-clean-mcp/blob/main/LICENSE)
+[![node](https://img.shields.io/badge/node-%3E%3D18-43853d.svg)](https://nodejs.org/en/)
+
 **Available Languages:** [English](#disk-clean-mcp) | [Fran?ais](#fr) | [简体中文](#zh-cn) | [繁體中文](#zh-tw) | [???](#ko) | [日本語](#ja)
 
 ---
@@ -61,6 +66,12 @@ npm run dev
 - **top_files** – Largest files with filters (min size, age, glob include/exclude)
 - **stale_candidates** – Large and old files (cleanup suggestions)
 - **duplicate_candidates** – Groups of files with identical size and content hash (read-only)
+
+### MCP Hub / Claude Submission (EN/中文)
+- Status: pending listing; add MCP Hub link after approval.
+- Provide when submitting: repo URL, npm install command (`npm install -g disk-clean-mcp` / `npx disk-clean-mcp`), command name (`disk-clean-mcp`), Node >= 18, MIT license, and the tool list above.
+- Config snippet (Claude Desktop): see “Configuration for Claude Desktop” JSON above.
+- 中文要点：提交时准备仓库链接、npm 安装指令、命令名、Node 版本要求、MIT 许可、工具清单、Claude 配置示例。
 
 ### Release Checklist
 - [ ] Run `npm run build` to verify compilation
