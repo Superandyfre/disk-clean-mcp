@@ -6,7 +6,7 @@ mcp-name: io.github.superandyfre/disk-clean-mcp
 [![license](https://img.shields.io/badge/license-MIT-0a0a0a.svg)](https://github.com/Superandyfre/disk-clean-mcp/blob/main/LICENSE)
 [![node](https://img.shields.io/badge/node-%3E%3D18-43853d.svg)](https://nodejs.org/en/)
 
-**Available Languages:** [English](#disk-clean-mcp) | [Fran?ais](#fr) | [¼òÌåÖĞÎÄ](#zh-cn) | [·±ówÖĞÎÄ](#zh-tw) | [???](#ko) | [ÈÕ±¾ÕZ](#ja)
+**Available Languages:** [English](#disk-clean-mcp) | [Fran?ais](#fr) | [ç®€ä½“ä¸­æ–‡](#zh-cn) | [ç¹é«”ä¸­æ–‡](#zh-tw) | [???](#ko) | [æ—¥æœ¬èª](#ja)
 
 ---
 
@@ -61,18 +61,18 @@ npm run dev
 ```
 
 ### Tools
-- **scan_summary** ¨C Get total size, file count, directory count with optional depth and ignore globs
-- **by_type** ¨C Top file extensions ranked by total size
-- **top_dirs** ¨C Heaviest subdirectories by aggregate size
-- **top_files** ¨C Largest files with filters (min size, age, glob include/exclude)
-- **stale_candidates** ¨C Large and old files (cleanup suggestions)
-- **duplicate_candidates** ¨C Groups of files with identical size and content hash (read-only)
+- **scan_summary** â€“ Get total size, file count, directory count with optional depth and ignore globs
+- **by_type** â€“ Top file extensions ranked by total size
+- **top_dirs** â€“ Heaviest subdirectories by aggregate size
+- **top_files** â€“ Largest files with filters (min size, age, glob include/exclude)
+- **stale_candidates** â€“ Large and old files (cleanup suggestions)
+- **duplicate_candidates** â€“ Groups of files with identical size and content hash (read-only)
 
-### MCP Hub / Claude Submission (EN/ÖĞÎÄ)
+### MCP Hub / Claude Submission (EN/ä¸­æ–‡)
 - Status: pending listing; add MCP Hub link after approval.
 - Provide when submitting: repo URL, npm install command (`npm install -g disk-clean-mcp` / `npx disk-clean-mcp`), command name (`disk-clean-mcp`), Node >= 18, MIT license, and the tool list above.
-- Config snippet (Claude Desktop): see ¡°Configuration for Claude Desktop¡± JSON above.
-- ÖĞÎÄÒªµã£ºÌá½»Ê±×¼±¸²Ö¿âÁ´½Ó¡¢npm °²×°Ö¸Áî¡¢ÃüÁîÃû¡¢Node °æ±¾ÒªÇó¡¢MIT Ğí¿É¡¢¹¤¾ßÇåµ¥¡¢Claude ÅäÖÃÊ¾Àı¡£
+- Config snippet (Claude Desktop): see â€œConfiguration for Claude Desktopâ€ JSON above.
+- ä¸­æ–‡è¦ç‚¹ï¼šæäº¤æ—¶å‡†å¤‡ä»“åº“é“¾æ¥ã€npm å®‰è£…æŒ‡ä»¤ã€å‘½ä»¤åã€Node ç‰ˆæœ¬è¦æ±‚ã€MIT è®¸å¯ã€å·¥å…·æ¸…å•ã€Claude é…ç½®ç¤ºä¾‹ã€‚
 
 ### Release Checklist
 - [ ] Run `npm run build` to verify compilation
@@ -83,7 +83,7 @@ npm run dev
 - [ ] Update repository URLs in package.json if needed
 
 ### License
-MIT ¨C Copyright (c) 2026 Superandyfre
+MIT â€“ Copyright (c) 2026 Superandyfre
 
 ---
 
@@ -91,24 +91,24 @@ MIT ¨C Copyright (c) 2026 Superandyfre
 
 ## Fran?ais
 
-Un serveur Model Context Protocol (MCP) qui analyse l'utilisation du disque local en mode lecture seule et sugg¨¨re des cibles de nettoyage par taille, type, r¨¦cence et doublons.
+Un serveur Model Context Protocol (MCP) qui analyse l'utilisation du disque local en mode lecture seule et suggÃ¨re des cibles de nettoyage par taille, type, rÃ©cence et doublons.
 
-### Fonctionnalit¨¦s
-- **Analyse de r¨¦pertoires**: Scannez les r¨¦pertoires pour r¨¦sumer la taille totale, le nombre de fichiers et r¨¦pertoires avec limites de profondeur configurables et motifs glob.
-- **Analyse par extension**: D¨¦composez l'utilisation du disque par extension de fichier pour identifier les types de fichiers les plus volumineux.
-- **Classement des r¨¦pertoires**: Listez les sous-r¨¦pertoires les plus volumineux par taille de fichier agr¨¦g¨¦e.
-- **D¨¦tection de fichiers volumineux**: Trouvez les fichiers les plus volumineux avec filtres optionnels par taille, ?ge et motifs glob.
-- **Suggestions de fichiers obsol¨¨tes**: Identifiez les fichiers volumineux et anciens pour nettoyage potentiel.
-- **D¨¦tection des doublons**: Trouvez les groupes de fichiers avec tailles et hachages de contenu identiques (lecture seule).
-- **Limites configurables**: Utilisez `ignoreGlobs`, `includeGlobs`, `maxFiles` et `maxDepth` pour affiner la port¨¦e.
+### FonctionnalitÃ©s
+- **Analyse de rÃ©pertoires**: Scannez les rÃ©pertoires pour rÃ©sumer la taille totale, le nombre de fichiers et rÃ©pertoires avec limites de profondeur configurables et motifs glob.
+- **Analyse par extension**: DÃ©composez l'utilisation du disque par extension de fichier pour identifier les types de fichiers les plus volumineux.
+- **Classement des rÃ©pertoires**: Listez les sous-rÃ©pertoires les plus volumineux par taille de fichier agrÃ©gÃ©e.
+- **DÃ©tection de fichiers volumineux**: Trouvez les fichiers les plus volumineux avec filtres optionnels par taille, ?ge et motifs glob.
+- **Suggestions de fichiers obsolÃ¨tes**: Identifiez les fichiers volumineux et anciens pour nettoyage potentiel.
+- **DÃ©tection des doublons**: Trouvez les groupes de fichiers avec tailles et hachages de contenu identiques (lecture seule).
+- **Limites configurables**: Utilisez `ignoreGlobs`, `includeGlobs`, `maxFiles` et `maxDepth` pour affiner la portÃ©e.
 
 ### Configuration requise
 - Node.js >= 18
-- Op¨¦ration en lecture seule (pas de fonctions de suppression/d¨¦placement)
-- Dossiers ignor¨¦s par d¨¦faut: `node_modules`, `.git`, `dist`, `build`, `.cache`
+- OpÃ©ration en lecture seule (pas de fonctions de suppression/dÃ©placement)
+- Dossiers ignorÃ©s par dÃ©faut: `node_modules`, `.git`, `dist`, `build`, `.cache`
 
 ### Installation et utilisation
-#### Paquet publi¨¦ (recommand¨¦)
+#### Paquet publiÃ© (recommandÃ©)
 ```bash
 npm install -g disk-clean-mcp
 # ou utiliser directement
@@ -128,7 +128,7 @@ npx disk-clean-mcp
 }
 ```
 
-#### D¨¦veloppement local
+#### DÃ©veloppement local
 ```bash
 git clone https://github.com/Superandyfre/disk-clean-mcp.git
 cd disk-clean-mcp
@@ -139,47 +139,47 @@ npm run dev  # mode dev avec recompilation automatique
 ```
 
 ### Outils disponibles
-- **scan_summary** ¨C Obtenez la taille totale, le nombre de fichiers et r¨¦pertoires
-- **by_type** ¨C Extensions de fichier class¨¦es par taille totale
-- **top_dirs** ¨C Sous-r¨¦pertoires les plus volumineux
-- **top_files** ¨C Fichiers les plus volumineux avec filtres
-- **stale_candidates** ¨C Fichiers volumineux et anciens
-- **duplicate_candidates** ¨C Groupes de fichiers doublons
+- **scan_summary** â€“ Obtenez la taille totale, le nombre de fichiers et rÃ©pertoires
+- **by_type** â€“ Extensions de fichier classÃ©es par taille totale
+- **top_dirs** â€“ Sous-rÃ©pertoires les plus volumineux
+- **top_files** â€“ Fichiers les plus volumineux avec filtres
+- **stale_candidates** â€“ Fichiers volumineux et anciens
+- **duplicate_candidates** â€“ Groupes de fichiers doublons
 
 ### Licence
-MIT ¨C Copyright (c) 2026 Superandyfre
+MIT â€“ Copyright (c) 2026 Superandyfre
 
 ---
 
 <a id="zh-cn"></a>
 
-## ¼òÌåÖĞÎÄ
+## ç®€ä½“ä¸­æ–‡
 
-Ò»¸ö Model Context Protocol (MCP) ·şÎñÆ÷£¬ÓÃÓÚ·ÖÎö±¾µØ´ÅÅÌÊ¹ÓÃÇé¿ö£¨Ö»¶ÁÄ£Ê½£©£¬²¢°´´óĞ¡¡¢ÀàĞÍ¡¢ĞÂ¾É³Ì¶ÈºÍÖØ¸´Ïî½¨ÒéÇåÀíÄ¿±ê¡£
+ä¸€ä¸ª Model Context Protocol (MCP) æœåŠ¡å™¨ï¼Œç”¨äºåˆ†ææœ¬åœ°ç£ç›˜ä½¿ç”¨æƒ…å†µï¼ˆåªè¯»æ¨¡å¼ï¼‰ï¼Œå¹¶æŒ‰å¤§å°ã€ç±»å‹ã€æ–°æ—§ç¨‹åº¦å’Œé‡å¤é¡¹å»ºè®®æ¸…ç†ç›®æ ‡ã€‚
 
-### ¹¦ÄÜÌØĞÔ
-- **Ä¿Â¼É¨Ãè**: É¨ÃèÄ¿Â¼ÒÔ»ã×Ü×Ü´óĞ¡¡¢ÎÄ¼şÊıºÍÄ¿Â¼Êı£¬Ö§³Ö¿ÉÅäÖÃµÄÉî¶ÈÏŞÖÆºÍÈ«¾ÖÆ¥ÅäÄ£Ê½¡£
-- **À©Õ¹Ãû·ÖÎö**: °´ÎÄ¼şÀ©Õ¹Ãû·Ö½â´ÅÅÌÊ¹ÓÃÇé¿ö£¬Ê¶±ğ×î´óµÄÎÄ¼şÀàĞÍ¡£
-- **Ä¿Â¼ÅÅÃû**: °´¾ÛºÏÎÄ¼ş´óĞ¡ÁĞ³ö×î´óµÄ×ÓÄ¿Â¼¡£
-- **´óÎÄ¼ş¼ì²â**: ²éÕÒ×î´óµÄÎÄ¼ş£¬Ö§³Ö°´´óĞ¡¡¢ÄêÁäºÍÈ«¾ÖÄ£Ê½¹ıÂË¡£
-- **³Â¾ÉÎÄ¼ş½¨Òé**: Ê¶±ğ¿ÉÄÜĞèÒªÇåÀíµÄ´óĞÍÇÒÀÏ¾ÉµÄÎÄ¼ş¡£
-- **ÖØ¸´Ïî¼ì²â**: ²éÕÒ¾ßÓĞÏàÍ¬´óĞ¡ºÍÄÚÈİ¹şÏ£µÄÎÄ¼ş×é£¨Ö»¶Á£©¡£
-- **¿ÉÅäÖÃÏŞÖÆ**: Ê¹ÓÃ `ignoreGlobs`¡¢`includeGlobs`¡¢`maxFiles` ºÍ `maxDepth` À´µ÷Õû·¶Î§ºÍ¿ØÖÆ¹¤×÷¸ºÔØ¡£
+### åŠŸèƒ½ç‰¹æ€§
+- **ç›®å½•æ‰«æ**: æ‰«æç›®å½•ä»¥æ±‡æ€»æ€»å¤§å°ã€æ–‡ä»¶æ•°å’Œç›®å½•æ•°ï¼Œæ”¯æŒå¯é…ç½®çš„æ·±åº¦é™åˆ¶å’Œå…¨å±€åŒ¹é…æ¨¡å¼ã€‚
+- **æ‰©å±•ååˆ†æ**: æŒ‰æ–‡ä»¶æ‰©å±•ååˆ†è§£ç£ç›˜ä½¿ç”¨æƒ…å†µï¼Œè¯†åˆ«æœ€å¤§çš„æ–‡ä»¶ç±»å‹ã€‚
+- **ç›®å½•æ’å**: æŒ‰èšåˆæ–‡ä»¶å¤§å°åˆ—å‡ºæœ€å¤§çš„å­ç›®å½•ã€‚
+- **å¤§æ–‡ä»¶æ£€æµ‹**: æŸ¥æ‰¾æœ€å¤§çš„æ–‡ä»¶ï¼Œæ”¯æŒæŒ‰å¤§å°ã€å¹´é¾„å’Œå…¨å±€æ¨¡å¼è¿‡æ»¤ã€‚
+- **é™ˆæ—§æ–‡ä»¶å»ºè®®**: è¯†åˆ«å¯èƒ½éœ€è¦æ¸…ç†çš„å¤§å‹ä¸”è€æ—§çš„æ–‡ä»¶ã€‚
+- **é‡å¤é¡¹æ£€æµ‹**: æŸ¥æ‰¾å…·æœ‰ç›¸åŒå¤§å°å’Œå†…å®¹å“ˆå¸Œçš„æ–‡ä»¶ç»„ï¼ˆåªè¯»ï¼‰ã€‚
+- **å¯é…ç½®é™åˆ¶**: ä½¿ç”¨ `ignoreGlobs`ã€`includeGlobs`ã€`maxFiles` å’Œ `maxDepth` æ¥è°ƒæ•´èŒƒå›´å’Œæ§åˆ¶å·¥ä½œè´Ÿè½½ã€‚
 
-### ÏµÍ³ÒªÇó
+### ç³»ç»Ÿè¦æ±‚
 - Node.js >= 18
-- Ö»¶Á²Ù×÷£¨ÎŞÉ¾³ı/ÒÆ¶¯¹¦ÄÜ£©
-- Ä¬ÈÏºöÂÔµÄÎÄ¼ş¼Ğ£º`node_modules`¡¢`.git`¡¢`dist`¡¢`build`¡¢`.cache`
+- åªè¯»æ“ä½œï¼ˆæ— åˆ é™¤/ç§»åŠ¨åŠŸèƒ½ï¼‰
+- é»˜è®¤å¿½ç•¥çš„æ–‡ä»¶å¤¹ï¼š`node_modules`ã€`.git`ã€`dist`ã€`build`ã€`.cache`
 
-### °²×°ÓëÊ¹ÓÃ
-#### ÒÑ·¢²¼µÄ°ü£¨ÍÆ¼ö£©
+### å®‰è£…ä¸ä½¿ç”¨
+#### å·²å‘å¸ƒçš„åŒ…ï¼ˆæ¨èï¼‰
 ```bash
 npm install -g disk-clean-mcp
-# »òÖ±½ÓÊ¹ÓÃ
+# æˆ–ç›´æ¥ä½¿ç”¨
 npx disk-clean-mcp
 ```
 
-#### Claude Desktop ÅäÖÃÊ¾Àı
+#### Claude Desktop é…ç½®ç¤ºä¾‹
 ```json
 {
   "mcpServers": {
@@ -192,65 +192,65 @@ npx disk-clean-mcp
 }
 ```
 
-#### ±¾µØ¿ª·¢
+#### æœ¬åœ°å¼€å‘
 ```bash
 git clone https://github.com/Superandyfre/disk-clean-mcp.git
 cd disk-clean-mcp
 npm install
 npm run build
 npm start
-npm run dev  # ¿ª·¢Ä£Ê½£¬×Ô¶¯±àÒë
+npm run dev  # å¼€å‘æ¨¡å¼ï¼Œè‡ªåŠ¨ç¼–è¯‘
 ```
 
-### ¹¤¾ßÁĞ±í
-- **scan_summary** ¨C »ñÈ¡×Ü´óĞ¡¡¢ÎÄ¼şÊı¡¢Ä¿Â¼Êı£¬Ö§³ÖÉî¶ÈºÍºöÂÔÄ£Ê½
-- **by_type** ¨C °´×Ü´óĞ¡ÅÅÁĞµÄÎÄ¼şÀ©Õ¹Ãû
-- **top_dirs** ¨C ×î´óµÄ×ÓÄ¿Â¼£¨°´¾ÛºÏ´óĞ¡£©
-- **top_files** ¨C ×î´óµÄÎÄ¼ş£¬Ö§³Ö¹ıÂË£¨´óĞ¡¡¢ÄêÁä¡¢Ä£Ê½£©
-- **stale_candidates** ¨C ´óĞÍÇÒÀÏ¾ÉµÄÎÄ¼ş£¨ÇåÀí½¨Òé£©
-- **duplicate_candidates** ¨C ÖØ¸´ÎÄ¼ş×é£¨ÏàÍ¬´óĞ¡ºÍ¹şÏ££©
+### å·¥å…·åˆ—è¡¨
+- **scan_summary** â€“ è·å–æ€»å¤§å°ã€æ–‡ä»¶æ•°ã€ç›®å½•æ•°ï¼Œæ”¯æŒæ·±åº¦å’Œå¿½ç•¥æ¨¡å¼
+- **by_type** â€“ æŒ‰æ€»å¤§å°æ’åˆ—çš„æ–‡ä»¶æ‰©å±•å
+- **top_dirs** â€“ æœ€å¤§çš„å­ç›®å½•ï¼ˆæŒ‰èšåˆå¤§å°ï¼‰
+- **top_files** â€“ æœ€å¤§çš„æ–‡ä»¶ï¼Œæ”¯æŒè¿‡æ»¤ï¼ˆå¤§å°ã€å¹´é¾„ã€æ¨¡å¼ï¼‰
+- **stale_candidates** â€“ å¤§å‹ä¸”è€æ—§çš„æ–‡ä»¶ï¼ˆæ¸…ç†å»ºè®®ï¼‰
+- **duplicate_candidates** â€“ é‡å¤æ–‡ä»¶ç»„ï¼ˆç›¸åŒå¤§å°å’Œå“ˆå¸Œï¼‰
 
-### ·¢²¼¼ì²éÇåµ¥
-- [ ] ÔËĞĞ `npm run build` ÑéÖ¤±àÒë
-- [ ] È·ÈÏ Node.js >= 18
-- [ ] ¸üĞÂ°æ±¾£º`npm version patch|minor|major`
-- [ ] ·¢²¼µ½ npm£º`npm publish`£¨ĞèÒª npm µÇÂ¼£©
-- [ ] ¸üĞÂ README ºÍ CHANGELOG£¨ÈçÊÊÓÃ£©
+### å‘å¸ƒæ£€æŸ¥æ¸…å•
+- [ ] è¿è¡Œ `npm run build` éªŒè¯ç¼–è¯‘
+- [ ] ç¡®è®¤ Node.js >= 18
+- [ ] æ›´æ–°ç‰ˆæœ¬ï¼š`npm version patch|minor|major`
+- [ ] å‘å¸ƒåˆ° npmï¼š`npm publish`ï¼ˆéœ€è¦ npm ç™»å½•ï¼‰
+- [ ] æ›´æ–° README å’Œ CHANGELOGï¼ˆå¦‚é€‚ç”¨ï¼‰
 
-### Ğí¿ÉÖ¤
-MIT ¨C Copyright (c) 2026 Superandyfre
+### è®¸å¯è¯
+MIT â€“ Copyright (c) 2026 Superandyfre
 
 ---
 
 <a id="zh-tw"></a>
 
-## ·±ówÖĞÎÄ
+## ç¹é«”ä¸­æ–‡
 
-Ò»‚€ Model Context Protocol (MCP) ËÅ·şÆ÷£¬ÓÃì¶·ÖÎö±¾™C´ÅµúÊ¹ÓÃÇé›r£¨Î¨×xÄ£Ê½£©£¬K°´´óĞ¡¡¢îĞÍ¡¢ĞÂÅf³Ì¶ÈºÍÖØÑ}í—½¨×hÇåÀíÄ¿˜Ë¡£
+ä¸€å€‹ Model Context Protocol (MCP) ä¼ºæœå™¨ï¼Œç”¨æ–¼åˆ†ææœ¬æ©Ÿç£ç¢Ÿä½¿ç”¨æƒ…æ³ï¼ˆå”¯è®€æ¨¡å¼ï¼‰ï¼Œä¸¦æŒ‰å¤§å°ã€é¡å‹ã€æ–°èˆŠç¨‹åº¦å’Œé‡è¤‡é …å»ºè­°æ¸…ç†ç›®æ¨™ã€‚
 
-### ¹¦ÄÜÌØĞÔ
-- **Ä¿ä›’ßÃè**: ’ßÃèÄ¿ä›ÒÔ¡¿‚¿‚´óĞ¡¡¢™n°¸”µºÍÄ¿ä›”µ£¬Ö§Ô®¿ÉÔO¶¨µÄÉî¶ÈÏŞÖÆºÍÍ¨ÓÃÅäŒ¦Ä£Ê½¡£
-- **¸±™nÃû·ÖÎö**: °´™n°¸¸±™nÃû·Ö½â´ÅµúÊ¹ÓÃÇé›r£¬×R„e×î´óµÄ™n°¸îĞÍ¡£
-- **Ä¿ä›ÅÅÃû**: °´¾ÛºÏ™n°¸´óĞ¡ÁĞ³ö×î´óµÄ×ÓÄ¿ä›¡£
-- **´ó™n°¸‚Éœy**: ²éÕÒ×î´óµÄ™n°¸£¬Ö§Ô®°´´óĞ¡¡¢ÄêıgºÍÍ¨ÓÃÄ£Ê½ºYßx¡£
-- **êÅf™n°¸½¨×h**: ×R„e¿ÉÄÜĞèÒªÇåÀíµÄ´óĞÍÇÒÀÏÅfµÄ™n°¸¡£
-- **ÖØÑ}í—‚Éœy**: ²éÕÒ¾ßÓĞÏàÍ¬´óĞ¡ºÍƒÈÈİësœµÄ™n°¸½M£¨Î¨×x£©¡£
-- **¿ÉÔO¶¨ÏŞÖÆ**: Ê¹ÓÃ `ignoreGlobs`¡¢`includeGlobs`¡¢`maxFiles` ºÍ `maxDepth` íÕ{Õû¹ ‡úºÍ¿ØÖÆ¹¤×÷Ø“İd¡£
+### åŠŸèƒ½ç‰¹æ€§
+- **ç›®éŒ„æƒæ**: æƒæç›®éŒ„ä»¥å½™ç¸½ç¸½å¤§å°ã€æª”æ¡ˆæ•¸å’Œç›®éŒ„æ•¸ï¼Œæ”¯æ´å¯è¨­å®šçš„æ·±åº¦é™åˆ¶å’Œé€šç”¨é…å°æ¨¡å¼ã€‚
+- **å‰¯æª”ååˆ†æ**: æŒ‰æª”æ¡ˆå‰¯æª”ååˆ†è§£ç£ç¢Ÿä½¿ç”¨æƒ…æ³ï¼Œè­˜åˆ¥æœ€å¤§çš„æª”æ¡ˆé¡å‹ã€‚
+- **ç›®éŒ„æ’å**: æŒ‰èšåˆæª”æ¡ˆå¤§å°åˆ—å‡ºæœ€å¤§çš„å­ç›®éŒ„ã€‚
+- **å¤§æª”æ¡ˆåµæ¸¬**: æŸ¥æ‰¾æœ€å¤§çš„æª”æ¡ˆï¼Œæ”¯æ´æŒ‰å¤§å°ã€å¹´é½¡å’Œé€šç”¨æ¨¡å¼ç¯©é¸ã€‚
+- **é™³èˆŠæª”æ¡ˆå»ºè­°**: è­˜åˆ¥å¯èƒ½éœ€è¦æ¸…ç†çš„å¤§å‹ä¸”è€èˆŠçš„æª”æ¡ˆã€‚
+- **é‡è¤‡é …åµæ¸¬**: æŸ¥æ‰¾å…·æœ‰ç›¸åŒå¤§å°å’Œå…§å®¹é›œæ¹Šçš„æª”æ¡ˆçµ„ï¼ˆå”¯è®€ï¼‰ã€‚
+- **å¯è¨­å®šé™åˆ¶**: ä½¿ç”¨ `ignoreGlobs`ã€`includeGlobs`ã€`maxFiles` å’Œ `maxDepth` ä¾†èª¿æ•´ç¯„åœå’Œæ§åˆ¶å·¥ä½œè² è¼‰ã€‚
 
-### Ïµ½yĞèÇó
+### ç³»çµ±éœ€æ±‚
 - Node.js >= 18
-- Î¨×x×÷˜I£¨Ÿo„h³ı/ÒÆ„Ó¹¦ÄÜ£©
-- îAÔOºöÂÔµÄÙYÁÏŠA£º`node_modules`¡¢`.git`¡¢`dist`¡¢`build`¡¢`.cache`
+- å”¯è®€ä½œæ¥­ï¼ˆç„¡åˆªé™¤/ç§»å‹•åŠŸèƒ½ï¼‰
+- é è¨­å¿½ç•¥çš„è³‡æ–™å¤¾ï¼š`node_modules`ã€`.git`ã€`dist`ã€`build`ã€`.cache`
 
-### °²ÑbÅcÊ¹ÓÃ
-#### ÒÑ°lÑµÄÌ×¼ş£¨ÍÆË]£©
+### å®‰è£èˆ‡ä½¿ç”¨
+#### å·²ç™¼ä½ˆçš„å¥—ä»¶ï¼ˆæ¨è–¦ï¼‰
 ```bash
 npm install -g disk-clean-mcp
-# »òÖ±½ÓÊ¹ÓÃ
+# æˆ–ç›´æ¥ä½¿ç”¨
 npx disk-clean-mcp
 ```
 
-#### Claude Desktop ÔO¶¨¹ Àı
+#### Claude Desktop è¨­å®šç¯„ä¾‹
 ```json
 {
   "mcpServers": {
@@ -263,26 +263,26 @@ npx disk-clean-mcp
 }
 ```
 
-#### ±¾™Cé_°l
+#### æœ¬æ©Ÿé–‹ç™¼
 ```bash
 git clone https://github.com/Superandyfre/disk-clean-mcp.git
 cd disk-clean-mcp
 npm install
 npm run build
 npm start
-npm run dev  # é_°lÄ£Ê½£¬×Ô„Ó¾×g
+npm run dev  # é–‹ç™¼æ¨¡å¼ï¼Œè‡ªå‹•ç·¨è­¯
 ```
 
-### ¹¤¾ßÇå†Î
-- **scan_summary** ¨C È¡µÃ¿‚´óĞ¡¡¢™n°¸”µ¡¢Ä¿ä›”µ£¬Ö§Ô®Éî¶ÈºÍºöÂÔÄ£Ê½
-- **by_type** ¨C °´¿‚´óĞ¡ÅÅÁĞµÄ™n°¸¸±™nÃû
-- **top_dirs** ¨C ×î´óµÄ×ÓÄ¿ä›£¨°´¾ÛºÏ´óĞ¡£©
-- **top_files** ¨C ×î´óµÄ™n°¸£¬Ö§Ô®ºYßx£¨´óĞ¡¡¢Äêıg¡¢Ä£Ê½£©
-- **stale_candidates** ¨C ´óĞÍÇÒÀÏÅfµÄ™n°¸£¨ÇåÀí½¨×h£©
-- **duplicate_candidates** ¨C ÖØÑ}™n°¸½M£¨ÏàÍ¬´óĞ¡ºÍësœ£©
+### å·¥å…·æ¸…å–®
+- **scan_summary** â€“ å–å¾—ç¸½å¤§å°ã€æª”æ¡ˆæ•¸ã€ç›®éŒ„æ•¸ï¼Œæ”¯æ´æ·±åº¦å’Œå¿½ç•¥æ¨¡å¼
+- **by_type** â€“ æŒ‰ç¸½å¤§å°æ’åˆ—çš„æª”æ¡ˆå‰¯æª”å
+- **top_dirs** â€“ æœ€å¤§çš„å­ç›®éŒ„ï¼ˆæŒ‰èšåˆå¤§å°ï¼‰
+- **top_files** â€“ æœ€å¤§çš„æª”æ¡ˆï¼Œæ”¯æ´ç¯©é¸ï¼ˆå¤§å°ã€å¹´é½¡ã€æ¨¡å¼ï¼‰
+- **stale_candidates** â€“ å¤§å‹ä¸”è€èˆŠçš„æª”æ¡ˆï¼ˆæ¸…ç†å»ºè­°ï¼‰
+- **duplicate_candidates** â€“ é‡è¤‡æª”æ¡ˆçµ„ï¼ˆç›¸åŒå¤§å°å’Œé›œæ¹Šï¼‰
 
-### ÊÚ™à
-MIT ¨C Copyright (c) 2026 Superandyfre
+### æˆæ¬Š
+MIT â€“ Copyright (c) 2026 Superandyfre
 
 ---
 
@@ -338,47 +338,47 @@ npm run dev  # ?? ???? ?? ?? ??
 ```
 
 ### ??
-- **scan_summary** ¨C ? ??, ?? ?, ???? ? ??
-- **by_type** ¨C ? ???? ??? ?? ???
-- **top_dirs** ¨C ?? ???? ?? ? ?? ????
-- **top_files** ¨C ??? ?? ?? ? ??(??, ??, ??)
-- **stale_candidates** ¨C ?? ??? ??(?? ??)
-- **duplicate_candidates** ¨C ?? ?? ??(??? ?? ? ??)
+- **scan_summary** â€“ ? ??, ?? ?, ???? ? ??
+- **by_type** â€“ ? ???? ??? ?? ???
+- **top_dirs** â€“ ?? ???? ?? ? ?? ????
+- **top_files** â€“ ??? ?? ?? ? ??(??, ??, ??)
+- **stale_candidates** â€“ ?? ??? ??(?? ??)
+- **duplicate_candidates** â€“ ?? ?? ??(??? ?? ? ??)
 
 ### ????
-MIT ¨C Copyright (c) 2026 Superandyfre
+MIT â€“ Copyright (c) 2026 Superandyfre
 
 ---
 
 <a id="ja"></a>
 
-## ÈÕ±¾ÕZ
+## æ—¥æœ¬èª
 
-¥í©`¥«¥ë¥Ç¥£¥¹¥¯¤ÎÊ¹ÓÃ×´›r¤òÕi¤ßÈ¡¤êŒŸÓÃ¥â©`¥É¤Ç·ÖÎö¤·¡¢¥µ¥¤¥º¡¢¥¿¥¤¥×¡¢×îĞÂĞÔ¡¢¤ª¤è¤ÓÖØÑ}¤Ë¤è¤Ã¤Æ¥¯¥ê©`¥ó¥¢¥Ã¥×ŒÏó¤òÌá°¸¤¹¤ëModel Context Protocol£¨MCP£©¥µ©`¥Ğ©`¤Ç¤¹¡£
+ãƒ­ãƒ¼ã‚«ãƒ«ãƒ‡ã‚£ã‚¹ã‚¯ã®ä½¿ç”¨çŠ¶æ³ã‚’èª­ã¿å–ã‚Šå°‚ç”¨ãƒ¢ãƒ¼ãƒ‰ã§åˆ†æã—ã€ã‚µã‚¤ã‚ºã€ã‚¿ã‚¤ãƒ—ã€æœ€æ–°æ€§ã€ãŠã‚ˆã³é‡è¤‡ã«ã‚ˆã£ã¦ã‚¯ãƒªãƒ¼ãƒ³ã‚¢ãƒƒãƒ—å¯¾è±¡ã‚’ææ¡ˆã™ã‚‹Model Context Protocolï¼ˆMCPï¼‰ã‚µãƒ¼ãƒãƒ¼ã§ã™ã€‚
 
-### ™CÄÜ
-- **¥Ç¥£¥ì¥¯¥È¥ê¥¹¥­¥ã¥ó**: ¥Ç¥£¥ì¥¯¥È¥ê¤ò¥¹¥­¥ã¥ó¤·¤Æ¡¢ºÏÓ‹¥µ¥¤¥º¡¢¥Õ¥¡¥¤¥ëÊı¡¢¥Ç¥£¥ì¥¯¥È¥êÊı¤òÒª¼s¤·¤Ş¤¹¡£˜‹³É¿ÉÄÜ¤ÊÉî¶ÈÖÆÏŞ¤È¥°¥í¥Ö¥Ñ¥¿©`¥ó¤ò¥µ¥İ©`¥È¤·¤Ş¤¹¡£
-- **’ˆˆ·ÖÎö**: ¥Õ¥¡¥¤¥ë’ˆˆ×Ó„e¤Ë¥Ç¥£¥¹¥¯Ê¹ÓÃÁ¿¤ò·Ö½â¤·¡¢×î´ó¤Î¥Õ¥¡¥¤¥ë¥¿¥¤¥×¤ò×R„e¤·¤Ş¤¹¡£
-- **¥Ç¥£¥ì¥¯¥È¥ê¥é¥ó¥­¥ó¥°**: ¼¯Ó‹¥Õ¥¡¥¤¥ë¥µ¥¤¥º„e¤Ë×î´ó¤Î¥µ¥Ö¥Ç¥£¥ì¥¯¥È¥ê¤òÒ»ÓE±íÊ¾¤·¤Ş¤¹¡£
-- **´ó¤­¤Ê¥Õ¥¡¥¤¥ë—Ê³ö**: ¥µ¥¤¥º¡¢Äêıh¡¢¥°¥í¥Ö¥Ñ¥¿©`¥ó¤Ç¥Õ¥£¥ë¥¿¥ê¥ó¥°¿ÉÄÜ¤Ê×î´ó¤Î¥Õ¥¡¥¤¥ë¤ò—ÊË÷¤·¤Ş¤¹¡£
-- **¹Å¤¤¥Õ¥¡¥¤¥ë¤ÎÌá°¸**: ¥¯¥ê©`¥ó¥¢¥Ã¥×¤ÎŒÏó¤È¤Ê¤ë¿ÉÄÜĞÔ¤¬¤¢¤ë´ó¤­¤¯¤Æ¹Å¤¤¥Õ¥¡¥¤¥ë¤ò×R„e¤·¤Ş¤¹¡£
-- **ÖØÑ}—Ê³ö**: Í¬¤¸¥µ¥¤¥º¤È¥³¥ó¥Æ¥ó¥Ä¥Ï¥Ã¥·¥å¤ò³Ö¤Ä¥Õ¥¡¥¤¥ë¥°¥ë©`¥×¤ò—ÊË÷¤·¤Ş¤¹£¨Õi¤ßÈ¡¤êŒŸÓÃ£©¡£
-- **˜‹³É¿ÉÄÜ¤ÊÖÆÏŞ**: `ignoreGlobs`¡¢`includeGlobs`¡¢`maxFiles`¡¢`maxDepth`¤òÊ¹ÓÃ¤·¤Æ¥¹¥³©`¥×¤òÕ{Õû¤·¤Ş¤¹¡£
+### æ©Ÿèƒ½
+- **ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚¹ã‚­ãƒ£ãƒ³**: ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ã‚¹ã‚­ãƒ£ãƒ³ã—ã¦ã€åˆè¨ˆã‚µã‚¤ã‚ºã€ãƒ•ã‚¡ã‚¤ãƒ«æ•°ã€ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªæ•°ã‚’è¦ç´„ã—ã¾ã™ã€‚æ§‹æˆå¯èƒ½ãªæ·±åº¦åˆ¶é™ã¨ã‚°ãƒ­ãƒ–ãƒ‘ã‚¿ãƒ¼ãƒ³ã‚’ã‚µãƒãƒ¼ãƒˆã—ã¾ã™ã€‚
+- **æ‹¡å¼µåˆ†æ**: ãƒ•ã‚¡ã‚¤ãƒ«æ‹¡å¼µå­åˆ¥ã«ãƒ‡ã‚£ã‚¹ã‚¯ä½¿ç”¨é‡ã‚’åˆ†è§£ã—ã€æœ€å¤§ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¤ãƒ—ã‚’è­˜åˆ¥ã—ã¾ã™ã€‚
+- **ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãƒ©ãƒ³ã‚­ãƒ³ã‚°**: é›†è¨ˆãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºåˆ¥ã«æœ€å¤§ã®ã‚µãƒ–ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ä¸€è¦§è¡¨ç¤ºã—ã¾ã™ã€‚
+- **å¤§ããªãƒ•ã‚¡ã‚¤ãƒ«æ¤œå‡º**: ã‚µã‚¤ã‚ºã€å¹´é½¢ã€ã‚°ãƒ­ãƒ–ãƒ‘ã‚¿ãƒ¼ãƒ³ã§ãƒ•ã‚£ãƒ«ã‚¿ãƒªãƒ³ã‚°å¯èƒ½ãªæœ€å¤§ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ¤œç´¢ã—ã¾ã™ã€‚
+- **å¤ã„ãƒ•ã‚¡ã‚¤ãƒ«ã®ææ¡ˆ**: ã‚¯ãƒªãƒ¼ãƒ³ã‚¢ãƒƒãƒ—ã®å¯¾è±¡ã¨ãªã‚‹å¯èƒ½æ€§ãŒã‚ã‚‹å¤§ããã¦å¤ã„ãƒ•ã‚¡ã‚¤ãƒ«ã‚’è­˜åˆ¥ã—ã¾ã™ã€‚
+- **é‡è¤‡æ¤œå‡º**: åŒã˜ã‚µã‚¤ã‚ºã¨ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ãƒãƒƒã‚·ãƒ¥ã‚’æŒã¤ãƒ•ã‚¡ã‚¤ãƒ«ã‚°ãƒ«ãƒ¼ãƒ—ã‚’æ¤œç´¢ã—ã¾ã™ï¼ˆèª­ã¿å–ã‚Šå°‚ç”¨ï¼‰ã€‚
+- **æ§‹æˆå¯èƒ½ãªåˆ¶é™**: `ignoreGlobs`ã€`includeGlobs`ã€`maxFiles`ã€`maxDepth`ã‚’ä½¿ç”¨ã—ã¦ã‚¹ã‚³ãƒ¼ãƒ—ã‚’èª¿æ•´ã—ã¾ã™ã€‚
 
-### Òª¼ş
+### è¦ä»¶
 - Node.js >= 18
-- Õi¤ßÈ¡¤êŒŸÓÃ²Ù×÷£¨Ï÷³ı/ÒÆ„Ó™CÄÜ¤Ê¤·£©
-- ¥Ç¥Õ¥©¥ë¥È¤ÇŸoÒ•¤µ¤ì¤ë¥Õ¥©¥ë¥À: `node_modules`¡¢`.git`¡¢`dist`¡¢`build`¡¢`.cache`
+- èª­ã¿å–ã‚Šå°‚ç”¨æ“ä½œï¼ˆå‰Šé™¤/ç§»å‹•æ©Ÿèƒ½ãªã—ï¼‰
+- ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§ç„¡è¦–ã•ã‚Œã‚‹ãƒ•ã‚©ãƒ«ãƒ€: `node_modules`ã€`.git`ã€`dist`ã€`build`ã€`.cache`
 
-### ¥¤¥ó¥¹¥È©`¥ë¤ÈÊ¹ÓÃ
-#### ¹«é_¥Ñ¥Ã¥±©`¥¸£¨ÍÆŠX£©
+### ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã¨ä½¿ç”¨
+#### å…¬é–‹ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ï¼ˆæ¨å¥¨ï¼‰
 ```bash
 npm install -g disk-clean-mcp
-# ¤Ş¤¿¤ÏÖ±½ÓÊ¹ÓÃ
+# ã¾ãŸã¯ç›´æ¥ä½¿ç”¨
 npx disk-clean-mcp
 ```
 
-#### Claude DesktopÔO¶¨Àı
+#### Claude Desktopè¨­å®šä¾‹
 ```json
 {
   "mcpServers": {
@@ -391,36 +391,36 @@ npx disk-clean-mcp
 }
 ```
 
-#### ¥í©`¥«¥ëé_°k
+#### ãƒ­ãƒ¼ã‚«ãƒ«é–‹ç™º
 ```bash
 git clone https://github.com/Superandyfre/disk-clean-mcp.git
 cd disk-clean-mcp
 npm install
 npm run build
 npm start
-npm run dev  # ×Ô„Ó¥³¥ó¥Ñ¥¤¥ë¸¶¤­¤Îé_°k¥â©`¥É
+npm run dev  # è‡ªå‹•ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ä»˜ãã®é–‹ç™ºãƒ¢ãƒ¼ãƒ‰
 ```
 
-### ¥Ä©`¥ë
-- **scan_summary** ¨C ºÏÓ‹¥µ¥¤¥º¡¢¥Õ¥¡¥¤¥ëÊı¡¢¥Ç¥£¥ì¥¯¥È¥êÊı¤òÈ¡µÃ
-- **by_type** ¨C ºÏÓ‹¥µ¥¤¥º„e¤Ë¥½©`¥È¤µ¤ì¤¿¥Õ¥¡¥¤¥ë’ˆˆ×Ó
-- **top_dirs** ¨C ¼¯Ó‹¥µ¥¤¥º„e¤Ë×î´ó¤Î¥µ¥Ö¥Ç¥£¥ì¥¯¥È¥ê
-- **top_files** ¨C ¥Õ¥£¥ë¥¿¸¶¤­¤Î×î´ó¥Õ¥¡¥¤¥ë£¨¥µ¥¤¥º¡¢Äêıh¡¢¥Ñ¥¿©`¥ó£©
-- **stale_candidates** ¨C ´ó¤­¤¯¤Æ¹Å¤¤¥Õ¥¡¥¤¥ë£¨¥¯¥ê©`¥ó¥¢¥Ã¥×Ìá°¸£©
-- **duplicate_candidates** ¨C ÖØÑ}¥Õ¥¡¥¤¥ë¥°¥ë©`¥×£¨Í¬¤¸¥µ¥¤¥º¤È¥Ï¥Ã¥·¥å£©
+### ãƒ„ãƒ¼ãƒ«
+- **scan_summary** â€“ åˆè¨ˆã‚µã‚¤ã‚ºã€ãƒ•ã‚¡ã‚¤ãƒ«æ•°ã€ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªæ•°ã‚’å–å¾—
+- **by_type** â€“ åˆè¨ˆã‚µã‚¤ã‚ºåˆ¥ã«ã‚½ãƒ¼ãƒˆã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«æ‹¡å¼µå­
+- **top_dirs** â€“ é›†è¨ˆã‚µã‚¤ã‚ºåˆ¥ã«æœ€å¤§ã®ã‚µãƒ–ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª
+- **top_files** â€“ ãƒ•ã‚£ãƒ«ã‚¿ä»˜ãã®æœ€å¤§ãƒ•ã‚¡ã‚¤ãƒ«ï¼ˆã‚µã‚¤ã‚ºã€å¹´é½¢ã€ãƒ‘ã‚¿ãƒ¼ãƒ³ï¼‰
+- **stale_candidates** â€“ å¤§ããã¦å¤ã„ãƒ•ã‚¡ã‚¤ãƒ«ï¼ˆã‚¯ãƒªãƒ¼ãƒ³ã‚¢ãƒƒãƒ—ææ¡ˆï¼‰
+- **duplicate_candidates** â€“ é‡è¤‡ãƒ•ã‚¡ã‚¤ãƒ«ã‚°ãƒ«ãƒ¼ãƒ—ï¼ˆåŒã˜ã‚µã‚¤ã‚ºã¨ãƒãƒƒã‚·ãƒ¥ï¼‰
 
-### ¥é¥¤¥»¥ó¥¹
-MIT ¨C Copyright (c) 2026 Superandyfre
-- ¸üĞÂ README/CHANGELOG ÈçÓĞ¸Ä¶¯
-- ½« package.json ÖĞµÄ repository / bugs / homepage Ìæ»»ÎªÊµ¼Ê²Ö¿âµØÖ·
+### ãƒ©ã‚¤ã‚»ãƒ³ã‚¹
+MIT â€“ Copyright (c) 2026 Superandyfre
+- æ›´æ–° README/CHANGELOG å¦‚æœ‰æ”¹åŠ¨
+- å°† package.json ä¸­çš„ repository / bugs / homepage æ›¿æ¢ä¸ºå®é™…ä»“åº“åœ°å€
 
 ## Tools
-- `scan_summary` ¨C total size/files/dirs, optional depth and ignore globs.
-- `by_type` ¨C top extensions by total size.
-- `top_dirs` ¨C heaviest subdirectories.
-- `top_files` ¨C largest files with filters (min size, age, glob include/exclude).
-- `stale_candidates` ¨C large and old files.
-- `duplicate_candidates` ¨C groups of files with identical sizes and hashes (read-only).
+- `scan_summary` â€“ total size/files/dirs, optional depth and ignore globs.
+- `by_type` â€“ top extensions by total size.
+- `top_dirs` â€“ heaviest subdirectories.
+- `top_files` â€“ largest files with filters (min size, age, glob include/exclude).
+- `stale_candidates` â€“ large and old files.
+- `duplicate_candidates` â€“ groups of files with identical sizes and hashes (read-only).
 
 ## Notes
 - Read-only: no delete/move operations.

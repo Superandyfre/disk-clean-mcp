@@ -140,3 +140,5 @@ vite.config.ts.timestamp-*
 # Project specific
 dist/
 .DS_Store
+.mcpregistry_github_token
+.mcpregistry_registry_token

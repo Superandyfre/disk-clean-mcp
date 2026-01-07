@@ -1,10 +1,21 @@
 ﻿{
-    "name": "io.github.superandyfre/disk-clean-mcp",
-    "packages": [
-        {
-            "registry_type": "mcpb",
-            "identifier": "https://github.com/Superandyfre/disk-clean-mcp/releases/download/v0.1.2/disk-clean-mcp.mcpb",
-            "file_sha256": "AC9C66F15198FAD9E41E83436FF9A926C923060BCF80BF37B56F8A7DEB5A1D5F"
-        }
-    ]
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Superandyfre/disk-clean-mcp",
+  "description": "Read-only disk usage analysis MCP server; suggests cleanup by size, type, recency, duplicates.",
+  "repository": {
+    "url": "https://github.com/Superandyfre/disk-clean-mcp",
+    "source": "github"
+  },
+  "version": "0.1.4",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "disk-clean-mcp",
+      "version": "0.1.4",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
 }
