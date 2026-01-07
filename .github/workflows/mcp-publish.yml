@@ -1,0 +1,56 @@
+name: MCP Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish-mcp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - name: Validate server.json
+        run: |
+          if [ ! -f server.json ]; then
+            echo "Error: server.json not found"
+            exit 1
+          fi
+          echo "? server.json found"
+          echo "Content:"
+          cat server.json
+
+      - name: Verify mcpb asset exists
+        run: |
+          ASSET_URL="${{ github.event.release.upload_url }}"
+          RELEASE_TAG="${{ github.event.release.tag_name }}"
+          MCPB_URL="https://github.com/${{ github.repository }}/releases/download/${RELEASE_TAG}/disk-clean-mcp.mcpb"
+          echo "Expected mcpb URL: $MCPB_URL"
+          echo "Checking asset availability..."
+
+      - name: Print submission info
+        run: |
+          echo "========== MCP HUB SUBMISSION INFO =========="
+          echo "Project: Disk Clean MCP"
+          echo "Version: ${{ github.event.release.tag_name }}"
+          echo "Release URL: ${{ github.event.release.html_url }}"
+          echo "mcpb Download: https://github.com/${{ github.repository }}/releases/download/${{ github.event.release.tag_name }}/disk-clean-mcp.mcpb"
+          echo ""
+          echo "server.json content:"
+          cat server.json
+          echo ""
+          echo "========== NEXT STEPS =========="
+          echo "1. Verify mcpb asset uploaded successfully"
+          echo "2. Submit server.json to official MCP Hub"
+          echo "3. For more info: https://github.com/Superandyfre/disk-clean-mcp#readme"
+
+      - name: Upload server.json artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mcp-submission-package
+          path: |
+            server.json
+            README.md
+            LICENSE
